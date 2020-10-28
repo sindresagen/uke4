@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUnit example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.11.3.css">
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.11.3.js"></script>
+    <script src="lib.js"></script>
+    <script>
+
+        QUnit.test("snu tekst - Sindre", function (assert) {
+            let actual = reverseText('Sindre');
+            let expected = 'erdniS';
+            assert.equal(actual, expected);
+        });
+        
+    </script>
+</body>
+</html>
