@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.11.3.css">
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.11.3.js"></script>
+    <script src="lib1.js"></script>
+    <script>
+        QUnit.test("check - 'epost'", function (assert) {
+          const actual = checkAddress('sindresagen@outlook.com');
+          const expected = true;
+          assert.equal(actual, expected);
+      });
+    </script>
+</body>
+</html>
